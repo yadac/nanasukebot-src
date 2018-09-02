@@ -31,9 +31,9 @@ namespace Microsoft.Bot.Sample.SimpleEchoBot
                     "Didn't get that!",
                     promptStyle: PromptStyle.Auto);
             }
-            else if (message.Text == "éR")
+            else if (message.Text == "yama")
             {
-                await context.PostAsync($"{this.count++}: êÏ");
+                await context.PostAsync($"{this.count++}: kawa");
                 context.Wait(MessageReceivedAsync);
             }
             else
