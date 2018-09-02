@@ -31,6 +31,11 @@ namespace Microsoft.Bot.Sample.SimpleEchoBot
                     "Didn't get that!",
                     promptStyle: PromptStyle.Auto);
             }
+            else if (message.Text == "éR")
+            {
+                await context.PostAsync($"{this.count++}: êÏ");
+                context.Wait(MessageReceivedAsync);
+            }
             else
             {
                 await context.PostAsync($"{this.count++}: You said {message.Text} !!");
